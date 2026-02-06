@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: burhan-aldeen
+    env: static
+    staticPublishPath: .
+    buildCommand: ""
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /business-profile.html
