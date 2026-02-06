@@ -1,0 +1,2987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burhan Aldeen | Retail Partnership Proposal for Nad Al Sheba Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4BA;
+            --gold-dark: #AA8C2C;
+            --gold-shimmer: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            --black: #030303;
+            --charcoal: #0A0A0A;
+            --dark: #0F0F0F;
+            --gray-800: #1A1A1A;
+            --gray-600: #3D3D3D;
+            --gray-400: #6B6B6B;
+            --gray-200: #B8B8B8;
+            --cream: #FDFBF7;
+            --white: #FFFFFF;
+            --green: #2E7D32;
+            --blue: #1565C0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Premium Text Gradient */
+        .gold-text {
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Elegant Glow Effects */
+        .glow {
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+
+        /* ==================== PAGE STRUCTURE ==================== */
+        .page {
+            min-height: 100vh;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 30px;
+            right: 80px;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--gray-600);
+        }
+
+        .page-logo {
+            position: absolute;
+            bottom: 30px;
+            left: 80px;
+            height: 30px;
+            opacity: 0.5;
+        }
+
+        .page-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 20%, var(--gold) 50%, rgba(212, 175, 55, 0.1) 80%, transparent 100%);
+            margin: 0;
+            position: relative;
+        }
+
+        .page-divider::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background: var(--black);
+            border: 2px solid var(--gold);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        /* ==================== COVER PAGE ==================== */
+        .cover {
+            background: radial-gradient(ellipse at center, #0D0D0D 0%, #030303 100%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cover-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(212, 175, 55, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+
+        .cover-pattern::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at top, transparent 0%, var(--black) 70%),
+                        radial-gradient(ellipse at bottom, transparent 0%, var(--black) 70%);
+        }
+
+        .cover-frame {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            right: 50px;
+            bottom: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.02) 0%, transparent 50%, rgba(212, 175, 55, 0.02) 100%);
+        }
+
+        .cover-corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-color: var(--gold);
+            border-style: solid;
+        }
+
+        .cover-corner.tl { top: -1px; left: -1px; border-width: 3px 0 0 3px; }
+        .cover-corner.tr { top: -1px; right: -1px; border-width: 3px 3px 0 0; }
+        .cover-corner.bl { bottom: -1px; left: -1px; border-width: 0 0 3px 3px; }
+        .cover-corner.br { bottom: -1px; right: -1px; border-width: 0 3px 3px 0; }
+
+        .cover-corner::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+        }
+
+        .cover-corner.tl::after { top: 10px; left: 10px; }
+        .cover-corner.tr::after { top: 10px; right: 10px; }
+        .cover-corner.bl::after { bottom: 10px; left: 10px; }
+        .cover-corner.br::after { bottom: 10px; right: 10px; }
+
+        .cover-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover-logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 40px;
+            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.3));
+        }
+
+        .cover-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #E8E8E8 50%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+        }
+
+        .cover-tagline {
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 60px;
+        }
+
+        .cover-divider {
+            width: 120px;
+            height: 2px;
+            background: var(--gold-shimmer);
+            margin: 0 auto 60px;
+            position: relative;
+        }
+
+        .cover-divider::before,
+        .cover-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .cover-divider::before { left: -20px; }
+        .cover-divider::after { right: -20px; }
+
+        .cover-doc-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .cover-doc-subtitle {
+            font-size: 0.9rem;
+            color: var(--gray-200);
+            letter-spacing: 2px;
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .cover-footer-item {
+            text-align: center;
+            padding: 15px 25px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            background: rgba(212, 175, 55, 0.02);
+        }
+
+        .cover-footer-label {
+            font-size: 0.55rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gray-400);
+            margin-bottom: 8px;
+        }
+
+        .cover-footer-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cover-date {
+            position: absolute;
+            top: 80px;
+            right: 80px;
+            text-align: right;
+            padding: 12px 20px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .cover-date-label {
+            font-size: 0.55rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gray-400);
+        }
+
+        .cover-date-value {
+            font-size: 0.9rem;
+            color: var(--gold);
+        }
+
+        /* ==================== SECTION HEADERS ==================== */
+        .section-header {
+            margin-bottom: 60px;
+        }
+
+        .section-number {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            font-weight: 300;
+            color: var(--white);
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--gray-400);
+            max-width: 650px;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        .title-line {
+            width: 60px;
+            height: 3px;
+            background: var(--gold-shimmer);
+            margin-top: 25px;
+            position: relative;
+        }
+
+        .title-line::after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        /* ==================== GAP ANALYSIS ==================== */
+        .gap-analysis-page {
+            background: radial-gradient(ellipse at top, #0D0D0D 0%, #030303 100%);
+        }
+
+        .gap-analysis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .gap-current, .gap-missing {
+            padding: 40px;
+            position: relative;
+        }
+
+        .gap-current {
+            background: linear-gradient(145deg, var(--charcoal) 0%, var(--dark) 100%);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .gap-current h3, .gap-missing h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        .tenant-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tenant-tag {
+            padding: 10px 18px;
+            font-size: 0.75rem;
+            border-radius: 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .tenant-tag.has {
+            background: rgba(46, 125, 50, 0.12);
+            border: 1px solid rgba(46, 125, 50, 0.35);
+            color: #66BB6A;
+        }
+
+        .gap-missing {
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.08), rgba(212, 175, 55, 0.02));
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.15), inset 0 0 60px rgba(212, 175, 55, 0.03);
+        }
+
+        .gap-missing::before {
+            content: 'OPPORTUNITY';
+            position: absolute;
+            top: -12px;
+            left: 30px;
+            background: var(--gold);
+            color: var(--black);
+            padding: 5px 15px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .missing-box {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .missing-box svg {
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
+        }
+
+        .missing-box h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .missing-box p {
+            font-size: 0.95rem;
+            color: var(--gray-200);
+            line-height: 1.8;
+        }
+
+        .why-matters {
+            margin-bottom: 35px;
+        }
+
+        .why-matters h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .matters-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .matter-card {
+            background: linear-gradient(145deg, var(--charcoal) 0%, var(--dark) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .matter-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .matter-stat {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .matter-text {
+            font-size: 0.8rem;
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        .solution-banner {
+            background: var(--gold-shimmer);
+            padding: 30px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .solution-banner h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--black);
+            margin-bottom: 10px;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .solution-banner p {
+            font-size: 0.95rem;
+            color: var(--black);
+            opacity: 0.85;
+            position: relative;
+        }
+
+        /* ==================== MARKET OPPORTUNITY ==================== */
+        .market-page {
+            background: var(--charcoal);
+        }
+
+        .market-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 50px;
+        }
+
+        .market-stat-large {
+            background: linear-gradient(145deg, var(--dark) 0%, var(--charcoal) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .market-stat-large::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold-shimmer);
+        }
+
+        .market-stat-large::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+        }
+
+        .market-stat-large .value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            font-weight: 300;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .market-stat-large .unit {
+            font-size: 1.8rem;
+        }
+
+        .market-stat-large .label {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gray-200);
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .market-stat-large .growth {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(46, 125, 50, 0.15);
+            border: 1px solid rgba(46, 125, 50, 0.4);
+            color: #4CAF50;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .market-stat-large .source {
+            font-size: 0.7rem;
+            color: var(--gray-600);
+            margin-top: 18px;
+            font-style: italic;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .market-card {
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .market-card .value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        .market-card .label {
+            font-size: 0.7rem;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.4;
+        }
+
+        /* ==================== EXECUTIVE SUMMARY ==================== */
+        .exec-summary {
+            background: var(--black);
+        }
+
+        .exec-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            flex: 1;
+            align-items: center;
+        }
+
+        .exec-content h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .exec-content p {
+            color: var(--gray-200);
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-size: 0.9rem;
+        }
+
+        .exec-highlights {
+            margin-top: 30px;
+        }
+
+        .exec-highlight {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(198, 168, 85, 0.1);
+        }
+
+        .exec-highlight:last-child {
+            border-bottom: none;
+        }
+
+        .exec-highlight-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(198, 168, 85, 0.1);
+            border: 1px solid rgba(198, 168, 85, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .exec-highlight-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .exec-highlight-text h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .exec-highlight-text p {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        .exec-image {
+            position: relative;
+        }
+
+        .exec-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .exec-image-frame {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: -15px;
+            bottom: -15px;
+            border: 1px solid var(--gold);
+            z-index: -1;
+        }
+
+        /* ==================== KEY METRICS ==================== */
+        .metrics-page {
+            background: var(--charcoal);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .metric-card {
+            background: linear-gradient(145deg, var(--dark) 0%, var(--charcoal) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 35px 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .metric-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(212, 175, 55, 0.1);
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold-shimmer);
+        }
+
+        .metric-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
+            font-weight: 300;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .metric-description {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        .business-model {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .model-card {
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            padding: 30px;
+        }
+
+        .model-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .model-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+        }
+
+        .model-percentage {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--white);
+        }
+
+        .model-card p {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        .model-bar {
+            height: 4px;
+            background: var(--gray-800);
+            margin-top: 20px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .model-bar-fill {
+            height: 100%;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        /* ==================== PRODUCT PORTFOLIO ==================== */
+        .portfolio-page {
+            background: var(--black);
+        }
+
+        .product-category-header {
+            margin-bottom: 20px;
+        }
+
+        .product-category-header h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product-count {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--gray-400);
+            letter-spacing: 1px;
+        }
+
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .products-showcase.large {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .product-item {
+            background: linear-gradient(145deg, var(--charcoal) 0%, var(--dark) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gold-shimmer);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-item:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(212, 175, 55, 0.1);
+        }
+
+        .product-item:hover::before {
+            opacity: 1;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .products-showcase.large .product-item img {
+            height: 120px;
+        }
+
+        .product-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            letter-spacing: 0.5px;
+        }
+
+        .product-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.9rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .product-summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .summary-card {
+            background: var(--charcoal);
+            border: 1px solid rgba(198, 168, 85, 0.2);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .summary-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        .summary-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gray-400);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .portfolio-card {
+            background: var(--charcoal);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+
+        .portfolio-image {
+            height: 100%;
+            min-height: 200px;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-category {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .portfolio-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-description {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .portfolio-stats {
+            display: flex;
+            gap: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(198, 168, 85, 0.1);
+        }
+
+        .portfolio-stat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+        }
+
+        .portfolio-stat-label {
+            font-size: 0.65rem;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ==================== STORE PRESENCE ==================== */
+        .store-page {
+            background: var(--charcoal);
+        }
+
+        .store-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .store-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 180px);
+            gap: 12px;
+        }
+
+        .store-gallery-item:first-child {
+            grid-row: span 2;
+        }
+
+        .store-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .store-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .store-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .store-feature {
+            display: flex;
+            gap: 18px;
+        }
+
+        .store-feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(198, 168, 85, 0.1);
+            border: 1px solid rgba(198, 168, 85, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .store-feature-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .store-feature-content h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .store-feature-content p {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            line-height: 1.5;
+        }
+
+        /* ==================== TARGET CUSTOMERS ==================== */
+        .customer-page {
+            background: var(--black);
+        }
+
+        .customer-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .customer-insight {
+            background: var(--charcoal);
+            border: 1px solid rgba(198, 168, 85, 0.15);
+            padding: 30px;
+        }
+
+        .customer-insight h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .customer-insight p {
+            font-size: 0.85rem;
+            color: var(--gray-200);
+            line-height: 1.7;
+        }
+
+        .customer-insight .highlight {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .customer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .customer-card {
+            background: var(--charcoal);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            padding: 35px;
+            text-align: center;
+        }
+
+        .customer-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background: rgba(198, 168, 85, 0.1);
+            border: 1px solid rgba(198, 168, 85, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .customer-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .customer-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .customer-description {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .customer-percentage {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--gold);
+        }
+
+        .customer-percentage-label {
+            font-size: 0.65rem;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ==================== WHY PARTNER ==================== */
+        .partner-page {
+            background: var(--charcoal);
+        }
+
+        .value-proposition {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .value-card {
+            background: linear-gradient(145deg, var(--dark) 0%, var(--charcoal) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold-shimmer);
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .value-icon {
+            margin-bottom: 18px;
+        }
+
+        .value-icon svg {
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+        }
+
+        .value-stat {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .value-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .value-desc {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            line-height: 1.6;
+        }
+
+        .mall-fit-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.2);
+        }
+
+        .mall-logo-large {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .mall-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--gray-200);
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .partner-card {
+            background: linear-gradient(145deg, var(--dark) 0%, var(--charcoal) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 35px;
+            display: flex;
+            gap: 25px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--gold-shimmer);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .partner-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateX(5px);
+            box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .partner-card:hover::before {
+            opacity: 1;
+        }
+
+        .partner-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            opacity: 0.6;
+        }
+
+        .partner-content h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .partner-content p {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            line-height: 1.7;
+        }
+
+        /* ==================== CURRENT LOCATIONS ==================== */
+        .locations-page {
+            background: var(--black);
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .location-card {
+            background: var(--charcoal);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            overflow: hidden;
+        }
+
+        .location-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .location-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .location-content {
+            padding: 30px;
+        }
+
+        .location-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(198, 168, 85, 0.15);
+            border: 1px solid rgba(198, 168, 85, 0.3);
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .location-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 18px;
+        }
+
+        .location-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .location-detail svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .location-detail span {
+            font-size: 0.85rem;
+            color: var(--gray-200);
+            line-height: 1.4;
+        }
+
+        /* ==================== SPACE REQUIREMENTS ==================== */
+        .requirements-page {
+            background: var(--charcoal);
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .requirement-card {
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.15);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .requirement-card h4 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .requirement-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .requirement-detail {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+        }
+
+        .requirements-note {
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.15);
+            border-left: 3px solid var(--gold);
+            padding: 25px 30px;
+            margin-bottom: 35px;
+        }
+
+        .requirements-note h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .requirements-note p {
+            font-size: 0.9rem;
+            color: var(--gray-200);
+            line-height: 1.7;
+        }
+
+        .investment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .investment-card {
+            background: var(--dark);
+            border: 1px solid rgba(198, 168, 85, 0.1);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .investment-card h5 {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gray-400);
+            margin-bottom: 10px;
+        }
+
+        .investment-card .value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        /* ==================== CONTACT PAGE ==================== */
+        .contact-page {
+            background: radial-gradient(ellipse at center, #0D0D0D 0%, #030303 100%);
+            justify-content: center;
+            position: relative;
+        }
+
+        .contact-page::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .contact-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dual-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 45px;
+        }
+
+        .logo-separator {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-logo {
+            width: 100px;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
+        }
+
+        .contact-logo.mall {
+            width: auto;
+            height: 55px;
+        }
+
+        .contact-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 300;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+
+        .contact-subtitle {
+            font-size: 1rem;
+            color: var(--gray-400);
+            margin-bottom: 45px;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 45px;
+        }
+
+        .contact-card {
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 28px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-card-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .contact-card-value {
+            font-size: 1rem;
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        .contact-cta {
+            display: inline-block;
+            padding: 18px 55px;
+            background: var(--gold-shimmer);
+            color: var(--black);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .contact-cta:hover::before {
+            left: 100%;
+        }
+
+        .contact-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .contact-footer {
+            margin-top: 55px;
+            padding-top: 35px;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .contact-footer p {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+            letter-spacing: 0.5px;
+        }
+
+        /* ==================== NAVIGATION ==================== */
+        .nav-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 15px 10px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .nav-dot::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot:hover {
+            background: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .nav-dot.active {
+            background: var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .nav-dot.active::after {
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        /* ==================== PRINT STYLES ==================== */
+        @media print {
+            .page {
+                page-break-after: always;
+                min-height: 100vh;
+                padding: 40px;
+            }
+
+            .nav-dots {
+                display: none;
+            }
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 1200px) {
+            .page {
+                padding: 50px;
+            }
+
+            .metrics-grid,
+            .requirements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .exec-grid,
+            .store-grid,
+            .market-hero {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .portfolio-card {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-image {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page {
+                padding: 30px;
+            }
+
+            .cover-title {
+                font-size: 2.2rem;
+                letter-spacing: 3px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .gap-analysis {
+                grid-template-columns: 1fr;
+            }
+
+            .matters-grid,
+            .value-proposition {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .metrics-grid,
+            .portfolio-grid,
+            .customer-grid,
+            .partner-grid,
+            .locations-grid,
+            .requirements-grid,
+            .business-model,
+            .market-grid,
+            .investment-grid,
+            .customer-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-showcase {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .products-showcase.large {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .product-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-dots {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-showcase,
+            .products-showcase.large {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <div class="nav-dot active" data-page="0"></div>
+        <div class="nav-dot" data-page="0b"></div>
+        <div class="nav-dot" data-page="1"></div>
+        <div class="nav-dot" data-page="2"></div>
+        <div class="nav-dot" data-page="3"></div>
+        <div class="nav-dot" data-page="4"></div>
+        <div class="nav-dot" data-page="4b"></div>
+        <div class="nav-dot" data-page="4c"></div>
+        <div class="nav-dot" data-page="4d"></div>
+        <div class="nav-dot" data-page="5"></div>
+        <div class="nav-dot" data-page="6"></div>
+        <div class="nav-dot" data-page="7"></div>
+        <div class="nav-dot" data-page="8"></div>
+        <div class="nav-dot" data-page="9"></div>
+    </div>
+
+    <!-- PAGE 1: COVER -->
+    <section class="page cover" id="page-0">
+        <div class="cover-pattern"></div>
+        <div class="cover-frame">
+            <div class="cover-corner tl"></div>
+            <div class="cover-corner tr"></div>
+            <div class="cover-corner bl"></div>
+            <div class="cover-corner br"></div>
+        </div>
+        <div class="cover-date">
+            <p class="cover-date-label">Prepared</p>
+            <p class="cover-date-value">February 2025</p>
+        </div>
+        <div class="cover-content">
+            <img src="burhan logo.png" alt="Burhan Aldeen" class="cover-logo">
+            <h1 class="cover-title">Burhan Aldeen</h1>
+            <p class="cover-tagline">Premium Oud & Arabian Perfumes</p>
+            <div class="cover-divider"></div>
+            <p class="cover-doc-title">Retail Partnership Proposal</p>
+            <p class="cover-doc-subtitle" style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+                <span>Prepared Exclusively for</span>
+                <img src="https://cdn.prod.website-files.com/67e3e309b60cd7acf63b2210/6887167d3ded00edb2ad1443_nasm_logo_updated.png" alt="Nad Al Sheba Mall" style="height: 40px; vertical-align: middle;">
+            </p>
+        </div>
+        <div class="cover-footer">
+            <div class="cover-footer-item">
+                <p class="cover-footer-label">Established</p>
+                <p class="cover-footer-value">Dubai, UAE</p>
+            </div>
+            <div class="cover-footer-item">
+                <p class="cover-footer-label">Current Stores</p>
+                <p class="cover-footer-value">2 Showrooms</p>
+            </div>
+            <div class="cover-footer-item">
+                <p class="cover-footer-label">Products</p>
+                <p class="cover-footer-value">50+ SKUs</p>
+            </div>
+            <div class="cover-footer-item">
+                <p class="cover-footer-label">Market</p>
+                <p class="cover-footer-value">GCC Region</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 1B: STRATEGIC FIT - THE GAP -->
+    <section class="page gap-analysis-page" id="page-0b">
+        <div class="section-header">
+            <span class="section-number">THE OPPORTUNITY</span>
+            <h2 class="section-title serif">What's Missing at Nad Al Sheba Mall?</h2>
+            <p class="section-subtitle">
+                A clear gap in your tenant mix that we are uniquely positioned to fill.
+            </p>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="gap-analysis">
+            <div class="gap-current">
+                <h3>What You Have</h3>
+                <div class="tenant-categories">
+                    <div class="tenant-tag has">Jewelry - Liali, Jawhara, Omega</div>
+                    <div class="tenant-tag has">Beauty - Watsons, Kiko, X-Beauty</div>
+                    <div class="tenant-tag has">Fashion - Adidas, Skechers, Oysho</div>
+                    <div class="tenant-tag has">F&B - SALT, % Arabica, 30+ outlets</div>
+                    <div class="tenant-tag has">Entertainment - Fun City, Air Maniax</div>
+                    <div class="tenant-tag has">Supermarket - Spinneys, Union Coop</div>
+                    <div class="tenant-tag has">Wellness - Fitcode, FitnGlam, Spa</div>
+                </div>
+            </div>
+            <div class="gap-missing">
+                <h3>What's Missing</h3>
+                <div class="missing-box">
+                    <svg viewBox="0 0 24 24" width="60" height="60" fill="none" stroke="#C6A855" stroke-width="1.5">
+                        <path d="M12 2C13.5 2 15 3.5 15 5C15 7 14 8 14 10C14 12 16 14 16 16C16 18.5 14 22 12 22C10 22 8 18.5 8 16C8 14 10 12 10 10C10 8 9 7 9 5C9 3.5 10.5 2 12 2Z"/>
+                        <path d="M12 16V18"/>
+                    </svg>
+                    <h4>Arabian Perfume & Oud Specialist</h4>
+                    <p>No dedicated store for authentic oud oils, Arabian perfumes, bakhoor, and traditional fragrances that are <strong>essential to Emirati daily life</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-matters">
+            <h3>Why This Gap Matters</h3>
+            <div class="matters-grid">
+                <div class="matter-card">
+                    <div class="matter-stat">2-4x</div>
+                    <div class="matter-text">Emiratis apply perfume <strong>daily</strong> - it's not luxury, it's necessity</div>
+                </div>
+                <div class="matter-card">
+                    <div class="matter-stat">Nad Al Sheba</div>
+                    <div class="matter-text">High concentration of <strong>Emirati families</strong> in surrounding villas</div>
+                </div>
+                <div class="matter-card">
+                    <div class="matter-stat">Zero</div>
+                    <div class="matter-text">Current options for <strong>authentic oud</strong> at Nad Al Sheba Mall</div>
+                </div>
+                <div class="matter-card">
+                    <div class="matter-stat">Every Day</div>
+                    <div class="matter-text">Bakhoor burned in homes for <strong>welcoming guests</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-banner">
+            <div class="solution-content">
+                <h4>Burhan Aldeen Fills This Gap</h4>
+                <p>We bring 60+ authentic Arabian fragrance products to serve the Nad Al Sheba community's daily needs.</p>
+            </div>
+        </div>
+
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">02</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 2: MARKET OPPORTUNITY -->
+    <section class="page market-page" id="page-1">
+        <div class="section-header">
+            <span class="section-number">01 / MARKET OPPORTUNITY</span>
+            <h2 class="section-title serif">A Thriving Industry in the Heart of Dubai</h2>
+            <p class="section-subtitle">
+                The UAE fragrance market represents one of the fastest-growing luxury segments,
+                driven by cultural significance and affluent consumers.
+            </p>
+            <div class="title-line"></div>
+        </div>
+        <div class="market-hero">
+            <div class="market-stat-large">
+                <div class="value">$749<span class="unit">M</span></div>
+                <div class="label">UAE Perfume Market Size (2024)</div>
+                <div class="growth">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    9.2% CAGR to $1.7B by 2033
+                </div>
+                <div class="source">Source: IMARC Group</div>
+            </div>
+            <div class="market-stat-large">
+                <div class="value">$1.89<span class="unit">B</span></div>
+                <div class="label">Global Oud Extract Market (2024)</div>
+                <div class="growth">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    8.9% CAGR to $3.7B by 2032
+                </div>
+                <div class="source">Source: Data Bridge Market Research</div>
+            </div>
+        </div>
+        <div class="market-grid">
+            <div class="market-card">
+                <div class="value">81%</div>
+                <div class="label">Luxury segment market share in GCC fragrances</div>
+            </div>
+            <div class="market-card">
+                <div class="value">500K</div>
+                <div class="label">Nad Al Sheba Mall sq.ft. serving growing community</div>
+            </div>
+            <div class="market-card">
+                <div class="value">95%</div>
+                <div class="label">Nad Al Sheba Mall occupancy - high demand area</div>
+            </div>
+            <div class="market-card">
+                <div class="value">2-4x</div>
+                <div class="label">Daily perfume application in GCC culture</div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">03</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 4: EXECUTIVE SUMMARY -->
+    <section class="page exec-summary" id="page-2">
+        <div class="section-header">
+            <span class="section-number">02 / COMPANY OVERVIEW</span>
+            <h2 class="section-title serif">Who We Are</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="exec-grid">
+            <div class="exec-content">
+                <h3>Premium Oud & Arabian Fragrances</h3>
+                <p>
+                    Burhan Aldeen Oud And Oud Oil is a distinguished purveyor of premium
+                    Arabian fragrances based in Dubai. We specialize in authentic oud oils,
+                    luxury perfumes, and traditional incense products, serving discerning
+                    customers across the GCC region.
+                </p>
+                <p>
+                    We are eager to bring our authentic Arabian fragrance experience to
+                    <strong>Nad Al Sheba Mall</strong> - serving the growing residential communities
+                    with products that are essential to daily Emirati lifestyle and cultural traditions.
+                </p>
+                <div class="exec-highlights">
+                    <div class="exec-highlight">
+                        <div class="exec-highlight-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <div class="exec-highlight-text">
+                            <h4>100% Authentic Products</h4>
+                            <p>Genuine oud oils and premium Arabian fragrances</p>
+                        </div>
+                    </div>
+                    <div class="exec-highlight">
+                        <div class="exec-highlight-icon">
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="exec-highlight-text">
+                            <h4>2 Operational Showrooms</h4>
+                            <p>Proven retail presence in key Dubai locations</p>
+                        </div>
+                    </div>
+                    <div class="exec-highlight">
+                        <div class="exec-highlight-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="exec-highlight-text">
+                            <h4>Expert Fragrance Consultation</h4>
+                            <p>Personalized service for every customer</p>
+                        </div>
+                    </div>
+                    <div class="exec-highlight">
+                        <div class="exec-highlight-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="exec-highlight-text">
+                            <h4>GCC Market Reach</h4>
+                            <p>Serving UAE nationals, tourists, and corporate clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exec-image">
+                <img src="khawaneej shops.jpeg" alt="Burhan Aldeen Showroom">
+                <div class="exec-image-frame"></div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">04</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 5: KEY METRICS -->
+    <section class="page metrics-page" id="page-3">
+        <div class="section-header">
+            <span class="section-number">03 / BUSINESS PERFORMANCE</span>
+            <h2 class="section-title serif">Our Key Metrics</h2>
+            <p class="section-subtitle">
+                Demonstrated business stability and growth in the premium fragrance segment.
+            </p>
+            <div class="title-line"></div>
+        </div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">2</div>
+                <div class="metric-label">Retail Locations</div>
+                <p class="metric-description">Operating showrooms in prime Dubai destinations</p>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">50+</div>
+                <div class="metric-label">Product SKUs</div>
+                <p class="metric-description">Comprehensive range of premium fragrances</p>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Sales Channels</div>
+                <p class="metric-description">Retail, wholesale, and online presence</p>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">GCC</div>
+                <div class="metric-label">Market Coverage</div>
+                <p class="metric-description">Serving customers across the Gulf region</p>
+            </div>
+        </div>
+        <div class="business-model">
+            <div class="model-card">
+                <div class="model-header">
+                    <h4>Retail Sales</h4>
+                    <div class="model-percentage">60%</div>
+                </div>
+                <p>Direct-to-consumer sales through showrooms with personalized fragrance consultation and discovery experience.</p>
+                <div class="model-bar"><div class="model-bar-fill" style="width: 60%"></div></div>
+            </div>
+            <div class="model-card">
+                <div class="model-header">
+                    <h4>Wholesale</h4>
+                    <div class="model-percentage">25%</div>
+                </div>
+                <p>B2B partnerships with hotels, retailers, spas, and corporate clients for bulk fragrance orders.</p>
+                <div class="model-bar"><div class="model-bar-fill" style="width: 25%"></div></div>
+            </div>
+            <div class="model-card">
+                <div class="model-header">
+                    <h4>Corporate Gifting</h4>
+                    <div class="model-percentage">15%</div>
+                </div>
+                <p>Customized gift solutions for Eid, weddings, Ramadan, and corporate events with branded packaging.</p>
+                <div class="model-bar"><div class="model-bar-fill" style="width: 15%"></div></div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">05</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 6: PRODUCT PORTFOLIO - DEHAN AL OUD & MUKHALLAT -->
+    <section class="page portfolio-page" id="page-4">
+        <div class="section-header">
+            <span class="section-number">04 / PRODUCT PORTFOLIO</span>
+            <h2 class="section-title serif">Dehan Al Oud & Mukhallat Collection</h2>
+            <p class="section-subtitle">
+                Pure oud oils sourced from Cambodia, India, Sri Lanka & Malaysia. Premium mukhallat perfume oils.
+            </p>
+            <div class="title-line"></div>
+        </div>
+
+        <!-- Dehan Al Oud Products -->
+        <div class="product-category-header">
+            <h3>Dehan Al Oud <span class="product-count">Pure Oud Oils - 10 Varieties</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud Cambodi VIP">
+                <div class="product-name">Cambodi VIP</div>
+                <div class="product-price">330 - 1,300 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud Silani VIP">
+                <div class="product-name">Silani VIP</div>
+                <div class="product-price">310 - 1,200 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud Malaysi">
+                <div class="product-name">Malaysi</div>
+                <div class="product-price">165 - 620 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud KalaKas">
+                <div class="product-name">KalaKas</div>
+                <div class="product-price">190 - 750 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud Manipuri">
+                <div class="product-name">Manipuri</div>
+                <div class="product-price">185 - 700 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/final-bottle.png" alt="Dehan Al Oud Hindi Qadim">
+                <div class="product-name">Hindi Qadim</div>
+                <div class="product-price">170 - 600 AED</div>
+            </div>
+        </div>
+
+        <!-- Mukhallat Products -->
+        <div class="product-category-header" style="margin-top: 35px;">
+            <h3>Mukhallat <span class="product-count">Perfume Oils - 11 Varieties</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-8-bg.png" alt="Mukhallat Mumaiyaz">
+                <div class="product-name">Mumaiyaz</div>
+                <div class="product-price">285 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-8-bg.png" alt="Mukhallat Fazza">
+                <div class="product-name">Fazza</div>
+                <div class="product-price">220 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-7-bg.png" alt="Mukhallat Rashid">
+                <div class="product-name">Rashid</div>
+                <div class="product-price">180 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-7-bg.png" alt="Mukhallat Wafa">
+                <div class="product-name">Wafa</div>
+                <div class="product-price">135 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-8-bg.png" alt="Mukhallat Shan">
+                <div class="product-name">Shan</div>
+                <div class="product-price">125 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/BA-8-bg.png" alt="Mukhallat Sheikh Abdullah">
+                <div class="product-name">Sheikh Abdullah</div>
+                <div class="product-price">95 AED</div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">06</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 7: PRODUCT PORTFOLIO - EDP PERFUMES -->
+    <section class="page portfolio-page" id="page-4b">
+        <div class="section-header">
+            <span class="section-number">04 / PRODUCT PORTFOLIO</span>
+            <h2 class="section-title serif">Eau de Parfum Collection</h2>
+            <p class="section-subtitle">
+                Luxury EDP perfumes for men, women & unisex. Long-lasting 12+ hour formulations.
+            </p>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="product-category-header">
+            <h3>Premium EDP Perfumes <span class="product-count">14 Fragrances - 50ml to 100ml</span></h3>
+        </div>
+        <div class="products-showcase large">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/Oud-Touch-.jpg" alt="Oud Touch EDP">
+                <div class="product-name">Oud Touch</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/De-Sak.jpg" alt="De Sakura EDP">
+                <div class="product-name">De Sakura</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/Imperial-.jpg" alt="Imperial EDP">
+                <div class="product-name">Imperial</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/Infinity-.jpg" alt="Infinity EDP">
+                <div class="product-name">Infinity</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/Makakujha.jpg" alt="Marakujha EDP">
+                <div class="product-name">Marakujha</div>
+                <div class="product-price">100 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-2-1536x1536-1.jpg" alt="Oud Amber EDP">
+                <div class="product-name">Oud Amber</div>
+                <div class="product-price">90 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-3-1536x1536-1.jpg" alt="Hindi Seufi EDP">
+                <div class="product-name">Hindi Seufi</div>
+                <div class="product-price">90 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-1-1536x1536-1.jpg" alt="Sweet Eva EDP">
+                <div class="product-name">Sweet Eva</div>
+                <div class="product-price">90 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-4-1536x1536-1.jpg" alt="Miss Reem EDP">
+                <div class="product-name">Miss Reem</div>
+                <div class="product-price">90 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-1536x1536-1.jpg" alt="Sauvage EDP">
+                <div class="product-name">Sauvage</div>
+                <div class="product-price">90 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-1-1536x1536-1.png" alt="Silque Mysk EDP">
+                <div class="product-name">Silque Mysk</div>
+                <div class="product-price">50 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/1-1536x1536-1.png" alt="Ozen EDP">
+                <div class="product-name">Ozen</div>
+                <div class="product-price">50 AED</div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">07</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 8: PRODUCT PORTFOLIO - BAKHOOR & AGARWOOD -->
+    <section class="page portfolio-page" id="page-4c">
+        <div class="section-header">
+            <span class="section-number">04 / PRODUCT PORTFOLIO</span>
+            <h2 class="section-title serif">Bakhoor & Natural Agarwood</h2>
+            <p class="section-subtitle">
+                Traditional incense and premium natural agarwood chips from India & Sri Lanka.
+            </p>
+            <div class="title-line"></div>
+        </div>
+
+        <!-- Bakhoor Products -->
+        <div class="product-category-header">
+            <h3>Bakhoor & Oud Muattar <span class="product-count">13 Premium Incense Blends</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/cccccccc-02.jpg" alt="Amber Oud France">
+                <div class="product-name">Amber Oud France</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/cccccccc-01.jpg" alt="Oud Maattar Shaikh Abdullah">
+                <div class="product-name">Shaikh Abdullah</div>
+                <div class="product-price">110 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/Final-02-01.jpg" alt="Oud Muattar Ameera">
+                <div class="product-name">Ameera</div>
+                <div class="product-price">95 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/aISHA-01.jpg" alt="Bakhoor Aisha">
+                <div class="product-name">Aisha</div>
+                <div class="product-price">50 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/ZAHRA-1.jpg" alt="Bakhoor Zahra">
+                <div class="product-name">Zahra</div>
+                <div class="product-price">50 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/08/KHALIFA-01.jpg" alt="Bakhoor Khalifa">
+                <div class="product-name">Khalifa</div>
+                <div class="product-price">50 AED</div>
+            </div>
+        </div>
+
+        <!-- Natural Agarwood -->
+        <div class="product-category-header" style="margin-top: 35px;">
+            <h3>Natural Agarwood Chips <span class="product-count">8 Premium Grades</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/Silani-Chips-double-super-scaled.png" alt="Silani Double Super">
+                <div class="product-name">Silani Double Super</div>
+                <div class="product-price">240 - 28,000 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/Silani-kawaka-scaled.png" alt="Silani Kawaka">
+                <div class="product-name">Silani Kawaka</div>
+                <div class="product-price">265 - 22,000 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/2-13-scaled.png" alt="Hindi Nagaland Triple Super">
+                <div class="product-name">Hindi Nagaland</div>
+                <div class="product-price">325 - 18,000 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/Silani-mori-triple-super-scaled.png" alt="Silani Muri Triple Super">
+                <div class="product-name">Silani Muri Triple</div>
+                <div class="product-price">195 - 16,000 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/2-12-scaled.png" alt="Hindi Salla Triple Super">
+                <div class="product-name">Hindi Salla Triple</div>
+                <div class="product-price">220 - 10,000 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/Silani-Mori-Super-scaled.png" alt="Silani Muri Super">
+                <div class="product-name">Silani Muri Super</div>
+                <div class="product-price">70 - 6,000 AED</div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">08</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 9: PRODUCT PORTFOLIO - HOME FRAGRANCE & BODY CARE -->
+    <section class="page portfolio-page" id="page-4d">
+        <div class="section-header">
+            <span class="section-number">04 / PRODUCT PORTFOLIO</span>
+            <h2 class="section-title serif">Home Fragrance & Body Care</h2>
+            <p class="section-subtitle">
+                Complete range of room fresheners and luxury body care products.
+            </p>
+            <div class="title-line"></div>
+        </div>
+
+        <!-- Home Fragrance -->
+        <div class="product-category-header">
+            <h3>Room Fresheners <span class="product-count">250ML Premium Sprays</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/bILING-01.jpg" alt="Biling Room Freshner">
+                <div class="product-name">Biling</div>
+                <div class="product-price">40 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/COCO-01.jpg" alt="COCO Room Freshner">
+                <div class="product-name">COCO</div>
+                <div class="product-price">40 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/07/ASASS-01.jpg" alt="Etihad Room Freshner">
+                <div class="product-name">Etihad</div>
+                <div class="product-price">40 AED</div>
+            </div>
+        </div>
+
+        <!-- Body Care -->
+        <div class="product-category-header" style="margin-top: 35px;">
+            <h3>Body Care <span class="product-count">Luxury Body Lotions - 150ML</span></h3>
+        </div>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/feeee.png" alt="Azizah Body Lotion">
+                <div class="product-name">Azizah</div>
+                <div class="product-price">30 AED</div>
+            </div>
+            <div class="product-item">
+                <img src="https://burhanaldeen.com/wp-content/uploads/2025/10/dddd.png" alt="Zikra Body Lotion">
+                <div class="product-name">Zikra</div>
+                <div class="product-price">30 AED</div>
+            </div>
+        </div>
+
+        <!-- Product Summary -->
+        <div class="product-summary">
+            <div class="summary-card">
+                <div class="summary-value">60+</div>
+                <div class="summary-label">Total Products</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-value">7</div>
+                <div class="summary-label">Product Categories</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-value">30-28,000</div>
+                <div class="summary-label">Price Range (AED)</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-value">100%</div>
+                <div class="summary-label">Authentic Products</div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">09</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 10: STORE PRESENCE -->
+    <section class="page store-page" id="page-5">
+        <div class="section-header">
+            <span class="section-number">05 / STORE PRESENCE</span>
+            <h2 class="section-title serif">Visual Merchandising Excellence</h2>
+            <p class="section-subtitle">
+                Our showrooms deliver an immersive luxury experience that drives conversions.
+            </p>
+            <div class="title-line"></div>
+        </div>
+        <div class="store-grid">
+            <div class="store-gallery">
+                <div class="store-gallery-item">
+                    <img src="khawaneej shops.jpeg" alt="Store Front">
+                </div>
+                <div class="store-gallery-item">
+                    <img src="khawaneej shops 1.jpeg" alt="Interior Display">
+                </div>
+                <div class="store-gallery-item">
+                    <img src="khawaneej shops2.jpeg" alt="Product Display">
+                </div>
+                <div class="store-gallery-item">
+                    <img src="khawaneej shops3.jpeg" alt="Store Interior">
+                </div>
+            </div>
+            <div class="store-info">
+                <h3>Store Design Philosophy</h3>
+                <div class="store-features">
+                    <div class="store-feature">
+                        <div class="store-feature-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                        <div class="store-feature-content">
+                            <h4>Premium Fit-out Investment</h4>
+                            <p>Luxury finishes and elegant design that meet mall aesthetic standards and elevate the tenant mix.</p>
+                        </div>
+                    </div>
+                    <div class="store-feature">
+                        <div class="store-feature-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        </div>
+                        <div class="store-feature-content">
+                            <h4>Strategic Visual Merchandising</h4>
+                            <p>Product displays that encourage discovery and maximize basket size through cross-selling.</p>
+                        </div>
+                    </div>
+                    <div class="store-feature">
+                        <div class="store-feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <div class="store-feature-content">
+                            <h4>Consultation Experience</h4>
+                            <p>Dedicated areas for personalized fragrance discovery that build customer loyalty and repeat visits.</p>
+                        </div>
+                    </div>
+                    <div class="store-feature">
+                        <div class="store-feature-icon">
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="store-feature-content">
+                            <h4>Consistent Brand Identity</h4>
+                            <p>Cohesive luxury positioning across all touchpoints that reinforces premium brand perception.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">10</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 11: TARGET CUSTOMERS -->
+    <section class="page customer-page" id="page-6">
+        <div class="section-header">
+            <span class="section-number">06 / TARGET MARKET</span>
+            <h2 class="section-title serif">Customer Demographics</h2>
+            <p class="section-subtitle">
+                Our products attract high-value customer segments that align with premium retail destinations.
+            </p>
+            <div class="title-line"></div>
+        </div>
+        <div class="customer-intro">
+            <div class="customer-insight">
+                <h4>Cultural Significance</h4>
+                <p>
+                    Fragrances hold profound cultural importance in the UAE. Practices like burning
+                    bakhoor and using oud-based scents are <span class="highlight">integral to daily life</span>.
+                    GCC consumers typically apply perfume <span class="highlight">2-4 times daily</span>,
+                    driving consistent demand year-round.
+                </p>
+            </div>
+            <div class="customer-insight">
+                <h4>High Spending Power</h4>
+                <p>
+                    Dubai welcomed <span class="highlight">18.7 million international visitors</span> in 2024,
+                    with average spending of <span class="highlight">$1,900 per visitor</span>. Tourism alone
+                    contributes 12% of Dubai's GDP, with luxury shopping being a key attraction.
+                </p>
+            </div>
+        </div>
+        <div class="customer-grid">
+            <div class="customer-card">
+                <div class="customer-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3 class="customer-title">UAE Nationals</h3>
+                <p class="customer-description">
+                    Affluent Emiratis with deep appreciation for traditional Arabian
+                    fragrances. High disposable income spent on premium oud products.
+                </p>
+                <div class="customer-percentage">45%</div>
+                <p class="customer-percentage-label">of customer base</p>
+            </div>
+            <div class="customer-card">
+                <div class="customer-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3 class="customer-title">GCC & International Tourists</h3>
+                <p class="customer-description">
+                    High-spending visitors from Saudi Arabia, Kuwait, Qatar, India, and Europe
+                    seeking authentic Dubai souvenirs and luxury fragrances.
+                </p>
+                <div class="customer-percentage">30%</div>
+                <p class="customer-percentage-label">of customer base</p>
+            </div>
+            <div class="customer-card">
+                <div class="customer-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <h3 class="customer-title">Corporate Clients</h3>
+                <p class="customer-description">
+                    Hotels, businesses, and event planners seeking premium gifting
+                    solutions and wholesale fragrance products for special occasions.
+                </p>
+                <div class="customer-percentage">25%</div>
+                <p class="customer-percentage-label">of customer base</p>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">11</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 12: WHY NAD AL SHEBA MALL -->
+    <section class="page partner-page" id="page-7">
+        <div class="section-header">
+            <span class="section-number">07 / PERFECT FIT FOR NAD AL SHEBA MALL</span>
+            <h2 class="section-title serif">Why We Belong at Nad Al Sheba Mall</h2>
+            <p class="section-subtitle">
+                Aligned with Dubai's Lifestyle Destination - serving the community with authentic Arabian fragrances.
+            </p>
+            <div class="title-line"></div>
+        </div>
+        <div class="value-proposition">
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#C6A855" stroke-width="1.5">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <div class="value-stat">AED 150+</div>
+                <div class="value-label">Average Transaction Value</div>
+                <div class="value-desc">Premium price point drives high revenue per sq.ft.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#C6A855" stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <div class="value-stat">Repeat Buyers</div>
+                <div class="value-label">High Customer Loyalty</div>
+                <div class="value-desc">Oud & bakhoor are consumables - customers return monthly</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#C6A855" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                </div>
+                <div class="value-stat">Eid & Ramadan</div>
+                <div class="value-label">Peak Season Sales</div>
+                <div class="value-desc">3x sales during gifting seasons drives mall footfall</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#C6A855" stroke-width="1.5">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                </div>
+                <div class="value-stat">Unique Offering</div>
+                <div class="value-label">Exclusive Category</div>
+                <div class="value-desc">Only Arabian perfume specialist in the mall</div>
+            </div>
+        </div>
+
+        <div class="mall-fit-header" style="margin-top: 30px;">
+            <img src="https://cdn.prod.website-files.com/67e3e309b60cd7acf63b2210/6887167d3ded00edb2ad1443_nasm_logo_updated.png" alt="Nad Al Sheba Mall" class="mall-logo-large">
+            <p class="mall-tagline">"It's all about the little moments that bring us together"</p>
+        </div>
+        <div class="partner-grid">
+            <div class="partner-card">
+                <div class="partner-number">01</div>
+                <div class="partner-content">
+                    <h4>Complements Your Tenant Mix</h4>
+                    <p>We perfectly complement existing jewelry stores (Liali, Jawhara) and beauty retailers (Watsons, Kiko).
+                    Arabian perfumes are the natural pairing for customers shopping for luxury accessories.</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-number">02</div>
+                <div class="partner-content">
+                    <h4>Community-Focused Brand</h4>
+                    <p>Our products serve daily life moments - morning oud application, bakhoor for home welcoming,
+                    gifts for family celebrations. We align with your "lifestyle destination" positioning.</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-number">03</div>
+                <div class="partner-content">
+                    <h4>Serving Nad Al Sheba Residents</h4>
+                    <p>The growing residential communities of Nad Al Sheba 1, 2, 3 & 4 include many Emirati families
+                    who use oud and bakhoor daily - we bring their essential products closer to home.</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-number">04</div>
+                <div class="partner-content">
+                    <h4>Unique Category - No Direct Competition</h4>
+                    <p>Nad Al Sheba Mall currently lacks a dedicated Arabian perfume & oud specialist.
+                    We fill this gap and add a unique cultural retail experience to your destination.</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-number">05</div>
+                <div class="partner-content">
+                    <h4>Family Gifting Destination</h4>
+                    <p>Our gift collections serve family occasions - Eid celebrations, weddings, and special moments.
+                    Perfect for families visiting Fun City, dining at SALT, or shopping at Spinneys.</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-number">06</div>
+                <div class="partner-content">
+                    <h4>Dubai Retail Standards Compliant</h4>
+                    <p>We commit to Dubai Holding Asset Management's operational standards,
+                    3-5 year lease terms, premium fit-out investment, and full Ejari registration compliance.</p>
+                </div>
+            </div>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">12</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 13: LOCATIONS & REQUIREMENTS -->
+    <section class="page requirements-page" id="page-8">
+        <div class="section-header">
+            <span class="section-number">08 / CURRENT PRESENCE & REQUIREMENTS</span>
+            <h2 class="section-title serif">Our Locations & Space Needs</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="locations-grid" style="margin-bottom: 40px;">
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="khawaneej shops.jpeg" alt="Al Khawaneej Center">
+                </div>
+                <div class="location-content">
+                    <span class="location-badge">Flagship Store</span>
+                    <h3 class="location-name">Al Khawaneej Center</h3>
+                    <div class="location-detail">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Shop G-56, Al Khawaneej, Dubai</span>
+                    </div>
+                    <div class="location-detail">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+971 4 557 5568</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="khawaneej shops 1.jpeg" alt="Deira Gold Souq">
+                </div>
+                <div class="location-content">
+                    <span class="location-badge">Heritage Location</span>
+                    <h3 class="location-name">Deira Gold Souq</h3>
+                    <div class="location-detail">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Shop #171, Deira, Dubai</span>
+                    </div>
+                    <div class="location-detail">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+971 52 186 7068</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="requirements-grid">
+            <div class="requirement-card">
+                <h4>Preferred Size</h4>
+                <div class="requirement-value">200-400</div>
+                <p class="requirement-detail">Square Feet</p>
+            </div>
+            <div class="requirement-card">
+                <h4>Floor Level</h4>
+                <div class="requirement-value">Ground</div>
+                <p class="requirement-detail">Preferred</p>
+            </div>
+            <div class="requirement-card">
+                <h4>Frontage</h4>
+                <div class="requirement-value">15+ ft</div>
+                <p class="requirement-detail">Minimum Width</p>
+            </div>
+            <div class="requirement-card">
+                <h4>Lease Term</h4>
+                <div class="requirement-value">3-5</div>
+                <p class="requirement-detail">Years</p>
+            </div>
+        </div>
+        <div class="requirements-note">
+            <h4>Ideal Location at Nad Al Sheba Mall</h4>
+            <p>
+                We seek a prime retail space near complementary tenants such as <strong>Liali, Jawhara (jewelry)</strong>,
+                <strong>Watsons, Kiko (beauty)</strong>, or near the <strong>Spinneys</strong> entrance for high footfall.
+                Ground floor preferred. We are ready to invest in premium fit-out that meets Dubai Retail standards.
+            </p>
+        </div>
+        <img src="burhan logo.png" alt="" class="page-logo">
+        <span class="page-number">13</span>
+    </section>
+
+    <div class="page-divider"></div>
+
+    <!-- PAGE 14: CONTACT -->
+    <section class="page contact-page" id="page-9">
+        <div class="contact-content">
+            <div class="dual-logos">
+                <img src="burhan logo.png" alt="Burhan Aldeen" class="contact-logo">
+                <span class="logo-separator">+</span>
+                <img src="https://cdn.prod.website-files.com/67e3e309b60cd7acf63b2210/6887167d3ded00edb2ad1443_nasm_logo_updated.png" alt="Nad Al Sheba Mall" class="contact-logo mall">
+            </div>
+            <h2 class="contact-title serif">Let's Create Something Special Together</h2>
+            <p class="contact-subtitle">
+                We are excited about the opportunity to bring Burhan Aldeen to Nad Al Sheba Mall.
+                Let's discuss how we can serve the community with authentic Arabian fragrances.
+            </p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <p class="contact-card-label">Business Contact</p>
+                    <p class="contact-card-value">
+                        +971 56 714 6881<br>
+                        +971 55 223 8373
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-card-label">Email</p>
+                    <p class="contact-card-value">
+                        burhanbunny122@gmail.com
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-card-label">Website</p>
+                    <p class="contact-card-value">
+                        burhanaldeen.com
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-card-label">Social Media</p>
+                    <p class="contact-card-value">
+                        @burhanaldeenoud
+                    </p>
+                </div>
+            </div>
+            <a href="mailto:burhanbunny122@gmail.com" class="contact-cta">Request a Meeting</a>
+            <div class="contact-footer">
+                <p>Burhan Aldeen Oud And Oud Oil | Dubai, United Arab Emirates</p>
+                <p style="margin-top: 5px;">Proposal prepared exclusively for Nad Al Sheba Mall & Dubai Retail Leasing Team</p>
+                <p style="margin-top: 3px; font-size: 0.65rem;">This document is confidential and intended for the recipient only.</p>
+            </div>
+        </div>
+        <span class="page-number">14</span>
+    </section>
+
+    <script>
+        // Navigation dots functionality
+        const pages = document.querySelectorAll('.page');
+        const dots = document.querySelectorAll('.nav-dot');
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const pageIndex = dot.getAttribute('data-page');
+                const targetPage = document.getElementById(`page-${pageIndex}`);
+                if (targetPage) {
+                    targetPage.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const pageId = entry.target.id;
+                    const pageIndex = pageId.replace('page-', '');
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    const activeDot = document.querySelector(`.nav-dot[data-page="${pageIndex}"]`);
+                    if (activeDot) {
+                        activeDot.classList.add('active');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        pages.forEach(page => observer.observe(page));
+    </script>
+</body>
+</html>
